@@ -6,3 +6,12 @@
 /Users/Guest/Desktop/ToDoList/obj/Debug/netcoreapp1.1/todolist.AssemblyInfo.cs
 /Users/Guest/Desktop/ToDoList/obj/Debug/netcoreapp1.1/todolist.dll
 /Users/Guest/Desktop/ToDoList/obj/Debug/netcoreapp1.1/todolist.pdb
+/Users/noahmedoff/Desktop/to-do-list/bin/Debug/netcoreapp1.1/todolist.deps.json
+/Users/noahmedoff/Desktop/to-do-list/bin/Debug/netcoreapp1.1/todolist.runtimeconfig.json
+/Users/noahmedoff/Desktop/to-do-list/bin/Debug/netcoreapp1.1/todolist.runtimeconfig.dev.json
+/Users/noahmedoff/Desktop/to-do-list/bin/Debug/netcoreapp1.1/todolist.dll
+/Users/noahmedoff/Desktop/to-do-list/bin/Debug/netcoreapp1.1/todolist.pdb
+/Users/noahmedoff/Desktop/to-do-list/obj/Debug/netcoreapp1.1/todolist.csproj.CoreCompileInputs.cache
+/Users/noahmedoff/Desktop/to-do-list/obj/Debug/netcoreapp1.1/todolist.AssemblyInfo.cs
+/Users/noahmedoff/Desktop/to-do-list/obj/Debug/netcoreapp1.1/todolist.dll
+/Users/noahmedoff/Desktop/to-do-list/obj/Debug/netcoreapp1.1/todolist.pdb
