@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron col-md-12">
+        <h1>To Do List</h1>
+      </div>
+
+      @RenderBody()
+
+      <p><a href='/categories'>Return to category list</a></p>
+      <p><a href='/'>Return to Main Page</a></p>
+    </div>
+  </body>
+</html>
