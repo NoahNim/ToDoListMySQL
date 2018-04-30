@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using MySql.Data.MySqlClient;
+using ToDoList;
 using System;
 
 namespace ToDoList.Models
@@ -7,13 +9,11 @@ namespace ToDoList.Models
   {
     private string _description;
     private int _id;
-    private static List<Item> _instances = new List<Item>{};
 
-    public Item (string description)
+    public Item (string Description, int Id = 0)
     {
-      _description = description;
-      _instances.Add(this);
-      _id = _instances.Count;
+      _description = Description;
+      _id = Id;
     }
     public string GetDescription()
     {
@@ -29,7 +29,25 @@ namespace ToDoList.Models
     }
     public static List<Item> GetAll()
     {
-      return _instances;
+      List<Item> allItems = new List<Item> {};
+      MySqlConnection conn = DB.Connection();
+      conn.Open();
+      MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
+      cmd.CommandText = @"SELECT * FROM items;";
+      MySqlDataReader rdr = cmd.ExecuteReader() as MySqlDataReader;
+      while(rdr.Read())
+        {
+          int itemId = rdr.GetInt32(0);
+          string itemDescription = rdr.GetString(1);
+          Item newItem = new Item(itemDescription, itemId);
+          allItems.Add(newItem);
+        }
+        conn.Close();
+        if (conn != null)
+        {
+          conn.Dispose();
+        }
+        return allItems;
     }
     public void Save()
     {
